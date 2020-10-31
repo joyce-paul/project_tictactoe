@@ -13,6 +13,8 @@ square = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 # Note: Might want to add "0" and make it invisible to viewers due to indexing
 # OR : playerInput = playerInput -1
 
+
+
 def board():
   print("\n")
   print("\t" + "\t" + square[0] + " ⎢ " + square[1] + " ⎢ " + square[2])
@@ -68,35 +70,43 @@ def addO():
 
 def winGame():
     if (square[0] != None) and (square[0] == square[1]) and (square[1] == square[2]):
-        print("You Won!  First row horizontal")
+        print("Congratulations! You have won. First row horizontal")
     if (square[3] != None) and (square[3] == square[4]) and (square[4] == square[5]):
-        print("You Won! Middle row horizontal")
+        print("Congratulations! You have won. Middle row horizontal")
     if (square[6] != None) and (square[6] == square[7]) and (square[7] == square[8]):
-        print("You Won! Last row horizontal")
+        print("Congratulations! You have won. Last row horizontal")
     if (square[0] != None) and (square[0] == square[3]) and (square[3] == square[6]):
-        print("You Won! First row vertical")
+        print("Congratulations! You have won. First row vertical")
     if (square[1] != None) and (square[1] == square[4]) and (square[4] == square[7]):
-        print("You Won! Middle row vertical")
+        print("Congratulations! You have won. Middle row vertical")
     if (square[2] != None) and (square[2] == square[5]) and (square[5] == square[8]):
-        print("You Won! Last row vertical")
+        print("YCongratulations! You have won. Last row vertical")
     if (square[0] != None) and (square[0] == square[4]) and (square[4] == square[8]):
-        print("You Won! Left diagonal")
+        print("Congratulations! You have won. Left diagonal")
     if (square[2] != None) and (square[2] == square[4]) and (square[4] == square[6]):
-        print("You Won! Right diagonal")
+        print("Congratulations! You have won. Right diagonal")
 
 
+# def endGame():
+#     if (square[0] != None) and (square[0] == square[1]) and (square[1] == square[2]);
 
-
-
+#     if (square[2] == square[3]) and (square[3] == square[4]) and (square[4] == square[5]) and (square[5] == square[6]) and (square[6] == square[7]) and (square[7] == square[8]):
+#         print("Game Over")
 addX()
 addO()
+addX()
+addO()
+addX()
+addO()
+addX()
+addO()
+addX()
 winGame()
 
 
 
-# def endGame():
-#     if winGame():
-#         print("Game Over")
+# clear()
+# list.clear()
 
 
 
