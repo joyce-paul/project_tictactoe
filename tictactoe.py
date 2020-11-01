@@ -46,7 +46,8 @@ while turn < 9:
     input_square_int = int(input_square)
     square_index = input_square_int - 1
     if (square[square_index] == "X") or (square[square_index] == "O"):
-        print(current_player + ", you selected a filled square. Try again. Select a square (1-9):")
+        print("\n" + "\t" + current_player + ", you selected a filled square. Start over" + "\n")
+        raise ValueError("Square already filled")
     square[square_index] = current_symbol
     turn = turn + 1
     if current_player == playerX:
@@ -58,40 +59,40 @@ while turn < 9:
     if (square[0] != None) and (square[0] == square[1]) and (square[1] == square[2]):
         board()
         print ('\n' + '\033[1;33mCongratulations! You have won! -> First row horizontal\033[0;0m')
-        print("Game Over!" + "\n")
+        print ('\n' + '\033[1;33mGame Over!\033[0;0m')
         exit()
     if (square[3] != None) and (square[3] == square[4]) and (square[4] == square[5]):
         board()
         print ('\n' + '\033[1;33mCongratulations! You have won! -> Middle row horizontal\033[0;0m')
-        print("Game Over!" + "\n")
+        print ('\n' + '\033[1;33mGame Over!\033[0;0m')
         exit()
     if (square[6] != None) and (square[6] == square[7]) and (square[7] == square[8]):
         board()
         print ('\n' + '\033[1;33mCongratulations! You have won! -> Last row horizontal\033[0;0m')
-        print("Game Over!" + "\n")
+        print ('\n' + '\033[1;33mGame Over!\033[0;0m')
         exit()
     if (square[0] != None) and (square[0] == square[3]) and (square[3] == square[6]):
         board()
         print ('\n' + '\033[1;33mCongratulations! You have won! -> First row vertical\033[0;0m')
-        print("Game Over!" + "\n")
+        print ('\n' + '\033[1;33mGame Over!\033[0;0m')
         exit()
     if (square[1] != None) and (square[1] == square[4]) and (square[4] == square[7]):
         board()
         print ('\n' + '\033[1;33mCongratulations! You have won! -> Middle row vertical\033[0;0m')
-        print("Game Over!" + "\n")
+        print ('\n' + '\033[1;33mGame Over!\033[0;0m')
         exit()
     if (square[2] != None) and (square[2] == square[5]) and (square[5] == square[8]):
         board()
         print ('\n' + '\033[1;33mCongratulations! You have won! -> Last row vertical\033[0;0m')
-        print("Game Over!" + "\n")
+        print ('\n' + '\033[1;33mGame Over!\033[0;0m')
         exit()
     if (square[0] != None) and (square[0] == square[4]) and (square[4] == square[8]):
         board()
         print ('\n' + '\033[1;33mCongratulations! You have won! -> Left diagonal\033[0;0m')
-        print("Game Over!" + "\n")
+        print ('\n' + '\033[1;33mGame Over!\033[0;0m')
         exit()
     if (square[2] != None) and (square[2] == square[4]) and (square[4] == square[6]):
         board()
         print ('\n' + '\033[1;33mCongratulations! You have won! -> Right diagonal\033[0;0m')
-        print("Game Over!" + "\n")
+        print ('\n' + '\033[1;33mGame Over!\033[0;0m')
         exit()
