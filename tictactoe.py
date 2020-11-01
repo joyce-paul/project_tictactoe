@@ -35,7 +35,7 @@ def board():
   print("\n")
 
 
-# ____ PLAYER TURN ____
+# ____ PLAY GAME ____
 turn = 0
 current_player = playerX
 current_symbol = "X"
@@ -95,21 +95,3 @@ while turn < 9:
         print ('\n' + '\033[1;33mCongratulations! You have won! -> Right diagonal\033[0;0m')
         print("Game Over!" + "\n")
         exit()
-
-
-
-# STEP 1: Create a list of squares [DONE]
-# STEP 2: Create a board and name each of the squares. [DONE]
-# STEP 3: Allocate X to Player1 [DONE]
-# STEP 4: Allocate O to Player2 [DONE]
-# STEP 5: If X turn == True:
-    # hand game to X
-    # place X on square when X inputs number
-# STEP 6: If Player2 turn == place O on square
-# The numbers players select
-# STEP 7: Stop game when one of the players wins game
-# STEP 8: Ask if players want to play again
-# If yes, restart game
-# If no, quit game
-# Keep displaying new board when player's turn
-
