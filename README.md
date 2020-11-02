@@ -5,7 +5,8 @@ Brief Description:
 
 How to Play:
 - First, install Python 3 on your machine.
+- Download the file `tictactoe.py` to your machine.
 - To start playing, go to your Terminal / Command Line.
-- Go to the directory that the file (tictactoe.py) is located.
+- Go to the directory that the file (`tictactoe.py`) is located.
 - Type  `python3 tictactoe.py`  to start the game.
 - Follow the game instructions.

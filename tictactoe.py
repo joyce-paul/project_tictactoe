@@ -37,7 +37,7 @@ def board():
 
 # ____ PLAY GAME ____
 turn = 0
-current_player = playerX
+current_player = playerX  # The game starts with PlayerX
 current_symbol = "X"
 
 while turn < 9:
